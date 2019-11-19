@@ -2,6 +2,7 @@ package com.kirilo.serialization.inheritance;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 public class InheritanceSerializationTest {
     public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class InheritanceSerializationTest {
         }
 
         try {
-            String absolutePath = tempFile.getAbsolutePath();
+            String absolutePath = Objects.requireNonNull(tempFile).getAbsolutePath();
             System.out.println("File name:" + absolutePath);
             SubClass subClassNew = (SubClass) SerializationUtil.deserialize(absolutePath);
             System.out.println("Deserialize class: " + subClassNew);
