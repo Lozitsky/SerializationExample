@@ -1,6 +1,6 @@
 package com.kirilo.serialization.proxy;
 
-import com.kirilo.serialization.inheritance.SerializationUtil;
+import com.kirilo.serialization.SerializationUtil;
 
 import java.io.File;
 import java.io.IOException;

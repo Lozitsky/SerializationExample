@@ -1,5 +1,7 @@
 package com.kirilo.serialization.inheritance;
 
+import com.kirilo.serialization.SerializationUtil;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;

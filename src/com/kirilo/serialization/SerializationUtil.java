@@ -1,4 +1,6 @@
-package com.kirilo.serialization.inheritance;
+// https://www.journaldev.com/2452/serialization-in-java
+
+package com.kirilo.serialization;
 
 import java.io.*;
 
@@ -9,6 +11,7 @@ public class SerializationUtil {
         outputStream.writeObject(obj);
         outputStream.close();
     }
+
     public static Object deserialize(String fileName) throws IOException, ClassNotFoundException {
         FileInputStream fileInputStream = new FileInputStream(fileName);
         ObjectInputStream inputStream = new ObjectInputStream(fileInputStream);
